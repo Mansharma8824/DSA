@@ -29,6 +29,16 @@ new_node = Node(2)
 new_node.next = head
 head = new_node
 
+# creting new node at the last of the linked list 
+
+new_node = Node(9)
+current = head
+while current.next != None:
+    current = current.next
+
+current.next = new_node
+
+
 
 PrintLinkedList(head)
     
