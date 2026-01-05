@@ -38,6 +38,18 @@ while current.next != None:
 
 current.next = new_node
 
+# creating a new node at the kth index of the linked list 
+
+new_node = Node(7)
+current = head
+k = 4
+for i in range(k-1):
+     current = current.next
+     
+new_node.next = current.next     
+current.next = new_node
+
+
 
 
 PrintLinkedList(head)
